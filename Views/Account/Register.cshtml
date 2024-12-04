@@ -1,0 +1,53 @@
+@model NupsiSign.Models.Dtos.CreateUser
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<div>
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p class="lead">Use a local account to log in!</p>
+</div>
+<div class="row">
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+    {
+        <div class="col py-3 mb-0">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-sm-4">
+                <i class="fa-solid fa-user"></i>
+                <label asp-for="Email" class="col-sm-4 col-form-label">Username</label>
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @autocomplete = "username", @placeholder = "username" })
+                @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-solid fa-envelope"></i>
+                <label asp-for="Email" class="col-sm-4 col-form-label">Email</label>
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @autocomplete = "email", @placeholder = "name@exemple.com" })
+                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-solid fa-key"></i>
+                <label asp-for="Password" class="col-sm-4 col-form-label">Password</label>
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @autocomplete = "current-password", @placeholder = "Password" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-solid fa-key"></i>
+                <label asp-for="ConfirmPassword" class="col-sm-4 col-form-label">Confirm Password</label>
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @autocomplete = "new-password", @placeholder = "Password" })
+                @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="row justify-content-start mt-4">
+            <div class="col-sm-2 d-grid">
+                <a class="btn btn-outline-primary mt-2" href="/" role="button">Return</a>
+            </div>
+            <div class="col-sm-2 d-grid">
+                <button type="submit" class="btn btn-primary mt-2">Create Account</button>
+            </div>
+            <p class="d-grid mt-2">
+                <a asp-controller="Account" asp-action="Register">Don't have an account? Make one now! </a>
+            </p>
+        </div>
+    }
+</div>

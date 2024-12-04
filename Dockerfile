@@ -11,7 +11,7 @@ COPY ["NupsiSign.csproj", "./"]
 RUN dotnet restore "NupsiSign.csproj"
 COPY . .
 WORKDIR "/src/"
-RUN dotnet build "NupsiSign.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet watch "NupsiSign.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
