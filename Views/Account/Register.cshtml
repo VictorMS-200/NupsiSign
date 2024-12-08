@@ -1,12 +1,12 @@
 @model NupsiSign.Models.Dtos.CreateUser
 
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Register a new account";
 }
 
 <div>
     <h1 class="display-4">@ViewData["Title"]</h1>
-    <p class="lead">Use a local account to log in!</p>
+    <p class="lead">Create a new account to start!</p>
 </div>
 <div class="row">
     @using (Html.BeginForm("Register", "Account", FormMethod.Post))
@@ -46,7 +46,7 @@
                 <button type="submit" class="btn btn-primary mt-2">Create Account</button>
             </div>
             <p class="d-grid mt-2">
-                <a asp-controller="Account" asp-action="Register">Don't have an account? Make one now! </a>
+                <a asp-controller="Account" asp-action="Login">Already have an account? Login now!</a>
             </p>
         </div>
     }

@@ -16,9 +16,19 @@
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         <PrivateAssets>all</PrivateAssets>
       </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.11" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
       <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
       <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.8" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+      <Folder Include="wwwroot\AddressProofDocumentation\" />
+      <Folder Include="wwwroot\BirthCertificate\" />
+      <Folder Include="wwwroot\IdentificationGuardians\" />
+      <Folder Include="wwwroot\InitialPetition\" />
+      <Folder Include="wwwroot\MarriageCertificate\" />
     </ItemGroup>
 
 </Project>

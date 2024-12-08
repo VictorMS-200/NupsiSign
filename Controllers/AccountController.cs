@@ -1,6 +1,7 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using NupsiSign.Models.DbSet;
 using NupsiSign.Models.Dtos;
 
@@ -8,7 +9,6 @@ namespace NupsiSign.Controllers;
 
 public class AccountController : Controller
 {
-    
     private readonly UserManager<User> _userManager;
     private readonly SignInManager<User> _signInManager;
     private readonly IMapper _mapper;
@@ -95,6 +95,12 @@ public class AccountController : Controller
         
         return View(user);
     }
+    
+    [HttpGet]
+    public IActionResult Information(string id)
+    {
+        return View();
+    } 
     
     public async Task<IActionResult> Logout()
     {

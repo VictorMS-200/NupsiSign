@@ -1,0 +1,57 @@
+@using System.Collections
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using NupsiSign.Models.DbSet
+@model NupsiSign.Models.DbSet.Data;
+
+@{
+    ViewData["Title"] = "Please fill out the form below:";
+}
+
+<div>
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <p class="lead">Now, we need you to fill out the form below. Please, answer the questions as accurately as possible. After you finish, click on the submit button.</p>
+</div>
+<div class="row mt-2">
+    @using (Html.BeginForm("Form", "Documentation", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        <div class="col-lg-5 m-4">
+            @foreach (var question in ViewBag.Questions)
+            {
+                <i class="fas fa-dot-circle fa-xs m-2"></i><label><h6>@question.title</h6></label><br>
+                @if (question.date is true)
+                {
+                    <div class="input-group date mt-2" data-date-format="dd/mm/aaaa">
+                        <input type="date" name="@question.title" class="form-control" required>
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    @if (question.options != null)
+                    {
+                        foreach (var option in question.options)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="@question.title" value="@option" required>
+                                <label class="form-check-label">
+                                    @option
+                                </label>
+                            </div>
+                        }
+                        <hr/>
+                    }
+                    else
+                    {
+                        <input name="@question.title" class="form-control" required>
+                    }
+                }
+            }
+
+            <div class="col-lg-10 mt-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    }
+</div>

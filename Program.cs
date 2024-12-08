@@ -2,6 +2,7 @@ using AcademicShare.Web.Context;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using NupsiSign.Models.DbSet;
+using NupsiSign.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,13 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<NupsiSignDbContext>(opts => opts.UseSqlServer(connectionString).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+// Add the Question service
+builder.Services.AddSingleton<QuestionService>();
+
+// Add the database context
+builder.Services.AddDbContext<NupsiSignDbContext>(opts => opts.UseSqlServer(connectionString).UseLazyLoadingProxies().UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking));
+
+// Configure the password hasher to use 300,000 iterations
 builder.Services.Configure<PasswordHasherOptions>(options => options.IterationCount = 300000);
 
 builder.Services.AddIdentity<User, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)

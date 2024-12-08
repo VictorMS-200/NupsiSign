@@ -1,8 +1,48 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .home-page {
+        background-image: url('https://aem-all.accor.com/content/dam/all/hubs/americas/latam/generic-images/all-magazine/destination-wedding-2024-1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .home-page-content {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .home-page h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .home-page p {
+        font-size: 1.5rem;
+    }
+
+    .home-page .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+    }
+</style>
+
+<div class="home-page">
+    <div class="home-page-content">
+        <h1>Welcome to NupsiSign!</h1>
+        <p class="lead">NupsiSign is a platform that allows you to sign documents online. You can upload your documents, sign them, and send them to the recipient. It's simple, fast, and secure.</p>
+        <a href="@Url.Action("Login", "Account")" class="btn btn-primary">Login</a>
+        <a href="@Url.Action("Index", "Documentation")" class="btn btn-secondary">Start Uploading Documents</a>
+    </div>
 </div>

@@ -10,21 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53cf4c91-2826-4d34-9739-5a9c669e2080" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Context/NupsiSignDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/DbSet/User.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Dtos/CreateUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Dtos/LoginUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Profiles/AutoMapperProfiles.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Data.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/DocumentationClass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Interface/Bride.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Interface/Couple.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Interface/FirstWitness.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Interface/Groom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Interface/SecondWitness.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Interface/Witness.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/DbSet/Quention.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Paginated/PaginatedList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/QuestionService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Account/Information.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Documentation/Form.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Views/Documentation/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NupsiSign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NupsiSign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Context/NupsiSignDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Context/NupsiSignDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/RegisterConstroller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/DocumentationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/DbSet/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/DbSet/User.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NupsiSign.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NupsiSign.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Profiles/AutoMapperProfiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Profiles/AutoMapperProfiles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Home/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Home/Privacy.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Views/_ViewImports.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +51,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;VictorMS-200&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VictorMS-200/NupsiSign.git&quot;,
+    &quot;accountId&quot;: &quot;c41d7b0e-f1b4-4889-8fc5-7c94f9712835&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d382df578ec93391918cfaa4ce7f4b8f35c9aed1241d6556dc9be26df13c/IdentityUser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ddfe5f2cab585726db85fc046e76ea5725f69d647c242379a11c6da8029c727/ClaimsPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Views/Documentation/Form.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -52,25 +83,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.NupsiSign: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.NupsiSign: http.executor": "Run",
-    ".NET Launch Settings Profile.NupsiSign: https.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.NupsiSign: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.NupsiSign: http.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.NupsiSign: https.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlserver.localdb&quot;
+    ]
   }
-}]]></component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+}</component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.NupsiSign: http">
     <configuration name="NupsiSign: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/NupsiSign.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -154,8 +190,22 @@
       <option name="presentableId" value="Default" />
       <updated>1733277099138</updated>
       <workItem from="1733277100240" duration="3032000" />
-      <workItem from="1733282811782" duration="5682000" />
+      <workItem from="1733282811782" duration="7470000" />
+      <workItem from="1733337331020" duration="7885000" />
+      <workItem from="1733350505494" duration="8681000" />
+      <workItem from="1733368325986" duration="6030000" />
+      <workItem from="1733375671351" duration="9589000" />
+      <workItem from="1733438245012" duration="4308000" />
     </task>
+    <task id="LOCAL-00001" summary="Login and Register done">
+      <option name="closed" value="true" />
+      <created>1733289278485</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1733289278485</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,8 +213,34 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Login and Register done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login and Register done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Views/_ViewImports.cshtml</url>
+          <properties isMultiMethodBreakpoint="true">
+            <option name="multiMethodBreakpoint" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

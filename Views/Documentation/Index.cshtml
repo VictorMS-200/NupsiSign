@@ -1,0 +1,43 @@
+@model NupsiSign.Models.DbSet.User
+
+<form method="post" asp-action="Index" asp-controller="Documentation" enctype="multipart/form-data">
+    <div class="col-lg-5 m-4">
+    <div class="mb-3">
+        <i class="fa-solid fa-upload m-2"></i><label asp-for="Documentation.BirthCertificateFile" class="form-label">Birth Certificate</label>
+        <input type="file" id="ChosseImg" asp-for="Documentation.BirthCertificateFile" class="form-control" aria-required="true"/>
+        <span asp-validation-for="Documentation.BirthCertificateFile" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <i class="fa-solid fa-upload m-2"></i><label asp-for="Documentation.IdentificationGuardiansFile" class="form-label">Identification Document of the Guardians</label>
+        <input type="file" id="ChosseImg" asp-for="Documentation.IdentificationGuardiansFile" class="form-control" aria-required="true"/>
+        <span asp-validation-for="Documentation.IdentificationGuardiansFile" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <i class="fa-solid fa-upload m-2"></i><label asp-for="Documentation.MarriageCertificateFile" class="form-label">Marriage Certificate (Divorce or Death)</label>
+        <input type="file" id="ChosseImg" asp-for="Documentation.MarriageCertificateFile" class="form-control" aria-required="true"/>
+        <span asp-validation-for="Documentation.MarriageCertificateFile" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <i class="fa-solid fa-upload m-2"></i><label asp-for="Documentation.InitialPetitionFile" class="form-label">Initial Petition and Judgment / Public Deed of Divorce</label>
+        <input type="file" id="ChosseImg" asp-for="Documentation.InitialPetitionFile" class="form-control" aria-required="true"/>
+        <span asp-validation-for="Documentation.InitialPetitionFile" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <i class="fa-solid fa-upload m-2"></i><label asp-for="Documentation.AddressProofDocumentationFile" class="form-label">Proof of Address</label>
+        <input type="file" id="ChosseImg" asp-for="Documentation.AddressProofDocumentationFile" class="form-control" aria-required="true"/>
+        <span asp-validation-for="Documentation.AddressProofDocumentationFile" class="text-danger"></span>
+    </div>
+    </div>
+    <div class="row justify-content-start mt-4 m-3">
+        <div class="col-sm-2 d-grid">
+            <button type="submit" class="btn btn-primary mt-2">Next</button>
+        </div>
+        <div class="col-sm-2 d-grid">
+            <a class="btn btn-outline-primary mt-2" href="/" role="button">Return</a>
+        </div>
+    </div>
+</form>
